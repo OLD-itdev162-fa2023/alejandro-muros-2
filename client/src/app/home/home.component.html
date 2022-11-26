@@ -1,13 +1,16 @@
-<div *ngFor="let post of posts">
-    <mat-card class="post-card" routerLink="/posts/{{post.id}}">
-        <mat-card-title>{{post.title}}</mat-card-title>
+<div *ngFor="let expense of expenses">
+    <mat-card class="expense-card" routerLink="/expenses/{{expense.id}}">
+        <mat-card-title>{{expense.expenseName}}</mat-card-title>
         <mat-card-content>
-            <p>{{post.date | date : 'longDate'}}</p>
-            <p>{{post.body}}</p>
+            <p><b>Business:</b> {{expense.business}}</p>
+            <p><b>Amount:</b> {{expense.amount}}</p>
+            <p><b>Payment Status:</b> {{expense.paymentStatus}}</p>
         </mat-card-content>
+    </mat-card>
+    <mat-card class="expense-actions">
         <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button mat-button routerLink="/update/{{expense.id}}">Update</button>
+            <button mat-button (click)="deleteExpense(expense.id)">Delete</button>
         </mat-card-actions>
     </mat-card>
 </div>

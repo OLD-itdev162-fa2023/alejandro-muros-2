@@ -1,0 +1,22 @@
+<form  #createExpenseForm="ngForm" (ngSubmit)="updateExpense()" class="expense-form">
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label></mat-label>
+        <input matInput name="expense-form" [(ngModel)]="model.expenseName" placeholder="Title" value="{{expense.expenseName}}">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label></mat-label>
+        <textarea matInput name="business" [(ngModel)]="model.business" placeholder="Business" value="{{expense.business}}"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label></mat-label>
+        <input type="number" matInput name="amount" min="0" [(ngModel)]="model.amount" placeholder="1" value="{{expense.amount}}">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label></mat-label>
+        <textarea matInput name="paymentStatus" [(ngModel)]="model.paymentStatus" placeholder="Unpaid" value="{{expense.paymentStatus}}"></textarea>
+    </mat-form-field>
+    <div class="form-field">
+        <button mat-raised-button color="primary" type="submit" class="form-button">Update Expense</button>
+        <button mat-raised-button color="primary" type="button" class="form-button" (click)="cancel()">Cancel</button>
+    </div>
+</form>

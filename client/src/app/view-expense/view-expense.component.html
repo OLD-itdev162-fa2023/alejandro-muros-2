@@ -1,0 +1,11 @@
+<mat-card class="expense-card">
+    <mat-card-title>{{expense.expenseName}}</mat-card-title>
+    <mat-card-content>
+        <p><b>Business:</b> {{expense.business}}</p>
+        <p><b>Amount:</b> {{expense.amount}}</p>
+        <p><b>Payment Status:</b> {{expense.paymentStatus}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button routerLink="/">Back</button>
+    </mat-card-actions>
+</mat-card>

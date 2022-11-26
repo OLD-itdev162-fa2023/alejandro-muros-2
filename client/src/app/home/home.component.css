@@ -1,9 +1,31 @@
-.post-card {
+.expense-card {
     max-width: 500px;
     margin: 40px auto;
 }
 
-.post-card:Hover {
+.expense-card:Hover {
     cursor: pointer;
-    background-color: #efefef;
+    background-color: #c5bdbd;
+}
+
+.expense-actions {
+    max-width: 500px;
+    margin: -25px auto;
+}
+
+.expense-actions button {
+    margin-right: 20px;
+    border: 3px solid rgb(128, 0, 0);
+}
+
+mat-card-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 25px;
+    margin-left: 15px;
 }

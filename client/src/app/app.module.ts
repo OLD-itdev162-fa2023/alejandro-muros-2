@@ -16,13 +16,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { CreatePostComponent } from './create-post/create-post.component';
+import { ViewExpenseComponent } from './view-expense/view-expense.component';
+import { CreateExpenseComponent } from './create-expense/create-expense.component';
+import { UpdateExpenseComponent } from './update-expense/update-expense.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ViewPostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    ViewExpenseComponent,
+    CreateExpenseComponent,
+    UpdateExpenseComponent
   ],
   imports: [
     BrowserModule,

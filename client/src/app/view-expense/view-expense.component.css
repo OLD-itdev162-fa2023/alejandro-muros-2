@@ -1,0 +1,21 @@
+.expense-card {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+mat-card-title {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+button {
+    align-content: center;
+    border: 3px solid rgb(128, 0, 0);
+}

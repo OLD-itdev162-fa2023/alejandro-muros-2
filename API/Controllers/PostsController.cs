@@ -19,6 +19,7 @@ namespace API.Controllers
             this.context = context;
         }
 
+/*
         // get api/posts
         [HttpGet(Name = "GetPosts")]
         public ActionResult<List<Post>> Get()
@@ -89,5 +90,7 @@ namespace API.Controllers
 
             throw new Exception("Error updating post");
         }
+    }
+    */
     }
 }
